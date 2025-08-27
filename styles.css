@@ -1,0 +1,66 @@
+
+body{
+    padding:7px;
+}
+
+header{
+    text-align:center;
+    font-style: italic;
+    color:brown;
+    margin-top:10px;
+}
+
+.para1{
+    text-decoration:underline;
+}
+
+.list{
+   
+    color:coral;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+ol li {
+    margin-bottom: 5px;
+    padding:2px;
+}
+
+.review{
+    font-style: oblique;
+    background-color:darkgreen;
+    display:flex;
+   
+
+}
+
+/* Responsiveness */
+/* Media Queries */
+
+@media (max-width:768px) {
+    .list{
+        grid-template-columns: 1fr;
+    }
+
+    .review{
+        flex-direction:column;
+
+    }
+}
+
+/* Mobile */
+
+@media(max-width:480px) {
+    header {
+        font-size: 1 rem;
+    }
+
+    .para1 {
+        font-size: 0.5rem;
+    }
+
+    .review {
+        font-size: 0.5rem;
+    }
+}
